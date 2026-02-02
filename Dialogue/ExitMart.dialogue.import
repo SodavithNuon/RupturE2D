@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bro3gs46t1c2b"
+path="res://.godot/imported/ExitMart.dialogue-93b4ee641377f5c1d021e8f6e5138d44.tres"
+
+[deps]
+
+source_file="res://Dialogue/ExitMart.dialogue"
+dest_files=["res://.godot/imported/ExitMart.dialogue-93b4ee641377f5c1d021e8f6e5138d44.tres"]
+
+[params]
+
+defaults=true

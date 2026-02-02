@@ -1,0 +1,68 @@
+[gd_scene load_steps=10 format=3 uid="uid://brgkhrubwbgeq"]
+
+[ext_resource type="Script" uid="uid://q21wnfvymv3m" path="res://Scripts/Arnold.gd" id="1_1t0qv"]
+[ext_resource type="Texture2D" uid="uid://dqkmlkl86byya" path="res://Game Assets/Map/Modern tiles_Free/Characters_free/Bob_idle_16x16.png" id="2_vewdy"]
+[ext_resource type="Texture2D" uid="uid://dwyhj4lk2wi8f" path="res://Game Assets/Map/ExclamationMark.png" id="3_pyktd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6icr4"]
+atlas = ExtResource("2_vewdy")
+region = Rect2(48, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_05yu5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6icr4")
+}],
+"loop": true,
+"name": &"Arnold_Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cxlln"]
+radius = 41.340054
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xed01"]
+atlas = ExtResource("3_pyktd")
+region = Rect2(1024, 0, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4k272"]
+atlas = ExtResource("3_pyktd")
+region = Rect2(0, 0, 1024, 1024)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d5x4r"]
+animations = [{
+"frames": [{
+"duration": 0.91,
+"texture": SubResource("AtlasTexture_xed01")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4k272")
+}],
+"loop": true,
+"name": &"ExclamationMark",
+"speed": 5.0
+}]
+
+[node name="Arnold" type="Area2D"]
+script = ExtResource("1_1t0qv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(824, -39)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_05yu5")
+animation = &"Arnold_Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(824, -29)
+shape = SubResource("CircleShape2D_cxlln")
+
+[node name="ExclamationMark" type="AnimatedSprite2D" parent="."]
+position = Vector2(825, -74.999985)
+scale = Vector2(0.03369139, 0.032226555)
+sprite_frames = SubResource("SpriteFrames_d5x4r")
+animation = &"ExclamationMark"
+frame_progress = 0.06172354
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
