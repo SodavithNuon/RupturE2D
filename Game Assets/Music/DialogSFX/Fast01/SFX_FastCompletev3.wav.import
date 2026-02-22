@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dq40cd04vckji"
+path="res://.godot/imported/SFX_FastCompletev3.wav-64fb7f8f8dd2e67466f4a2376f1b54f7.sample"
+
+[deps]
+
+source_file="res://Game Assets/Music/DialogSFX/Fast01/SFX_FastCompletev3.wav"
+dest_files=["res://.godot/imported/SFX_FastCompletev3.wav-64fb7f8f8dd2e67466f4a2376f1b54f7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

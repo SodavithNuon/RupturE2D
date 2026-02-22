@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://8be3w1iep7jj"
+path="res://.godot/imported/SFX_SingleLowONoReverbv1.wav-434028e00d606c6f01fa6387e0a7d85d.sample"
+
+[deps]
+
+source_file="res://Game Assets/Music/DialogSFX/Voices01/SFX_SingleLowONoReverbv1.wav"
+dest_files=["res://.godot/imported/SFX_SingleLowONoReverbv1.wav-434028e00d606c6f01fa6387e0a7d85d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

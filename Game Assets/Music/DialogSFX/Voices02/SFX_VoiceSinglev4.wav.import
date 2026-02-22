@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c5esc2vtlcpgo"
+path="res://.godot/imported/SFX_VoiceSinglev4.wav-89ff32c8046323c3d8c5731488bf1cde.sample"
+
+[deps]
+
+source_file="res://Game Assets/Music/DialogSFX/Voices02/SFX_VoiceSinglev4.wav"
+dest_files=["res://.godot/imported/SFX_VoiceSinglev4.wav-89ff32c8046323c3d8c5731488bf1cde.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

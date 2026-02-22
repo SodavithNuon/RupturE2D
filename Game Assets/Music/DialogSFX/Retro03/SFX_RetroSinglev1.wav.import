@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bug17fd2n31t1"
+path="res://.godot/imported/SFX_RetroSinglev1.wav-c056e743565ce76c5b73e79b26d3759f.sample"
+
+[deps]
+
+source_file="res://Game Assets/Music/DialogSFX/Retro03/SFX_RetroSinglev1.wav"
+dest_files=["res://.godot/imported/SFX_RetroSinglev1.wav-c056e743565ce76c5b73e79b26d3759f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

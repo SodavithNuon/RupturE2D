@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b5jpo2sodmpth"
+path="res://.godot/imported/SFX_SkeletonMultiplev1.wav-bc83c77f9749a29a6e15a36fcd0976f0.sample"
+
+[deps]
+
+source_file="res://Game Assets/Music/DialogSFX/Skeleton01/SFX_SkeletonMultiplev1.wav"
+dest_files=["res://.godot/imported/SFX_SkeletonMultiplev1.wav-bc83c77f9749a29a6e15a36fcd0976f0.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

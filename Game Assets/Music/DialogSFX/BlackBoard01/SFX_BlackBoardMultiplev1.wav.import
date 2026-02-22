@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://crq2a4u8g5goc"
+path="res://.godot/imported/SFX_BlackBoardMultiplev1.wav-06d00aa220fb19e2a3729b4a50f754d7.sample"
+
+[deps]
+
+source_file="res://Game Assets/Music/DialogSFX/BlackBoard01/SFX_BlackBoardMultiplev1.wav"
+dest_files=["res://.godot/imported/SFX_BlackBoardMultiplev1.wav-06d00aa220fb19e2a3729b4a50f754d7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

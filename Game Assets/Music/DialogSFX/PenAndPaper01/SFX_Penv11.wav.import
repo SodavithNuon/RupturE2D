@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b1qhlskpbaxb3"
+path="res://.godot/imported/SFX_Penv11.wav-b18f5b4abf94c0e935155f2397fcda0a.sample"
+
+[deps]
+
+source_file="res://Game Assets/Music/DialogSFX/PenAndPaper01/SFX_Penv11.wav"
+dest_files=["res://.godot/imported/SFX_Penv11.wav-b18f5b4abf94c0e935155f2397fcda0a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
