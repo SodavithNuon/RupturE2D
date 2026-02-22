@@ -202,9 +202,14 @@ layout_mode = 2
 text = "Response example"
 
 [node name="TextureRect" type="TextureRect" parent="Balloon"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.035
+anchor_bottom = 0.062000003
+offset_left = 143.0
+offset_top = 394.0
+offset_right = 217.68
+offset_bottom = 453.824
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true

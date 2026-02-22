@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://brgkhrubwbgeq"]
+[gd_scene load_steps=11 format=3 uid="uid://brgkhrubwbgeq"]
 
 [ext_resource type="Script" uid="uid://q21wnfvymv3m" path="res://Scripts/Arnold.gd" id="1_1t0qv"]
 [ext_resource type="Texture2D" uid="uid://dqkmlkl86byya" path="res://Game Assets/Map/Modern tiles_Free/Characters_free/Bob_idle_16x16.png" id="2_vewdy"]
@@ -44,6 +44,10 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1t0qv"]
+radius = 11.0
+height = 38.0
+
 [node name="Arnold" type="Area2D"]
 script = ExtResource("1_1t0qv")
 
@@ -63,6 +67,12 @@ scale = Vector2(0.03369139, 0.032226555)
 sprite_frames = SubResource("SpriteFrames_d5x4r")
 animation = &"ExclamationMark"
 frame_progress = 0.06172354
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(824, -29)
+shape = SubResource("CapsuleShape2D_1t0qv")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
