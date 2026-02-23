@@ -20,7 +20,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_64u82"]
-size = Vector2(12.5, 8.625)
+size = Vector2(17.25, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xed01"]
 atlas = ExtResource("2_uifi3")
@@ -45,25 +45,25 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qte1n"]
-radius = 4.0
-height = 18.0
+radius = 6.0
+height = 26.0
 
 [node name="Josh" type="Area2D"]
 script = ExtResource("1_m0uuh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(115.5, -1)
-scale = Vector2(1.1875, 1.125)
+scale = Vector2(1.585, 1.5)
 sprite_frames = SubResource("SpriteFrames_m0uuh")
 animation = &"Josh_Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(110, 13)
+position = Vector2(106.625, 19)
 shape = SubResource("RectangleShape2D_64u82")
 
 [node name="ExclamationMark" type="AnimatedSprite2D" parent="."]
-position = Vector2(115.99999, -18)
-scale = Vector2(0.013793909, 0.013427736)
+position = Vector2(114.99999, -27.999998)
+scale = Vector2(0.034, 0.032)
 sprite_frames = SubResource("SpriteFrames_64u82")
 animation = &"ExclamationMark"
 frame_progress = 0.78430355
@@ -72,7 +72,7 @@ frame_progress = 0.78430355
 position = Vector2(-6.1035156e-05, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(116, 7)
+position = Vector2(116.00006, 6)
 shape = SubResource("CapsuleShape2D_qte1n")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

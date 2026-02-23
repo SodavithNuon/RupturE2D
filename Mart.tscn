@@ -8976,10 +8976,6 @@ script = ExtResource("6_6icr4")
 position = Vector2(1151, 320.5)
 shape = SubResource("RectangleShape2D_6icr4")
 
-[node name="Josh" parent="MartExit" instance=ExtResource("4_05yu5")]
-position = Vector2(991, 198)
-scale = Vector2(1.5, 1.5)
-
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = -64.0
 offset_top = -170.0
@@ -9007,6 +9003,10 @@ limit_left = -63
 limit_top = -172
 limit_right = 1230
 limit_bottom = 465
+
+[node name="Josh" parent="Y Sorting" instance=ExtResource("4_05yu5")]
+position = Vector2(1019, 194.00002)
+scale = Vector2(1.25, 1.25)
 
 [connection signal="body_entered" from="MartExit" to="MartExit" method="_on_body_entered"]
 [connection signal="body_exited" from="MartExit" to="MartExit" method="_on_body_exited"]

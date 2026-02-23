@@ -7,7 +7,7 @@ const ARNOLD_DIALOGUE = preload("uid://d2nciq4rt6flq")
 var is_player_close = false
 var is_dialogue_active = false
 
-func ready():
+func _ready():
 	DialogueManager.dialogue_started.connect(_on_dialogue_started)
 	DialogueManager.dialogue_ended.connect(_on_dialogue_ended)
 	

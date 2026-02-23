@@ -1,5 +1,5 @@
 ~ start
 Would you like to leave the mart?
-- Yes
-- No => END
+- yes
+- no => END
 => END
