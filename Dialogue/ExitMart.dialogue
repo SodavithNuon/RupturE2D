@@ -1,5 +1,6 @@
 ~ start
 Would you like to leave the mart?
 - yes
+	do go_to_storage()
 - no => END
 => END

@@ -681,11 +681,6 @@ animations = [{
 "loop": true,
 "name": &"Walk_RightUp",
 "speed": 5.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"new_animation",
-"speed": 5.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o850h"]
@@ -701,7 +696,7 @@ script = ExtResource("1_kbbts")
 position = Vector2(17, 151)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_6pjul")
-animation = &"new_animation"
+animation = &"Idle_Backward"
 autoplay = "Idle_Backward"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

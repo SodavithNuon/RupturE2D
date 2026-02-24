@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://cnv01cgkh33j4"]
+[gd_scene load_steps=14 format=3 uid="uid://cnv01cgkh33j4"]
 
 [ext_resource type="Script" uid="uid://dgxk3oh2krily" path="res://Dialogue/balloon.gd" id="1_36de5"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="3_72ixx"]
+[ext_resource type="Texture2D" uid="uid://dblfpqkfq84c2" path="res://Game Assets/UI/CharacterPortrait/Arnold.png" id="4_ie3k4"]
 [ext_resource type="AudioStream" uid="uid://do22i2h42u7e1" path="res://Game Assets/Music/DialogSFX/TypeWriterMultiple01/SFX_TypeWriterMutiplev1.wav" id="4_oyjxg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
@@ -206,10 +207,11 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.035
 anchor_bottom = 0.062000003
-offset_left = 143.0
-offset_top = 394.0
-offset_right = 217.68
-offset_bottom = 453.824
+offset_left = 130.0
+offset_top = 375.0
+offset_right = 204.68
+offset_bottom = 452.824
+texture = ExtResource("4_ie3k4")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true

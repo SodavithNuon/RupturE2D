@@ -18,10 +18,11 @@ config/icon="res://icon.svg"
 [autoload]
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+GameState="*res://Scripts/GameState.gd"
 
 [dialogue_manager]
 
-runtime/balloon_path="res://Dialogue/balloon.tscn"
+runtime/balloon_path="res://Dialogue/arnold_balloon.tscn"
 
 [editor_plugins]
 
