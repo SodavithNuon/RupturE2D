@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://c06b821ufx24s"]
+
+[ext_resource type="Script" uid="uid://bol0bqh52rr52" path="res://Scripts/menu.gd" id="1_lti8b"]
+[ext_resource type="Texture2D" uid="uid://bmvhjwwkcwtm3" path="res://Game Assets/UI/RupturEMenu.png" id="2_ouk20"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+grow_vertical = 0
+script = ExtResource("1_lti8b")
+
+[node name="Title" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 33.0
+offset_top = -561.0
+offset_right = 212.0
+offset_bottom = -496.0
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_top = -649.0
+offset_right = 1925.0
+offset_bottom = 431.0
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_ouk20")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -101.0
+offset_right = 70.0
+grow_vertical = 0
+
+[node name="Startbutton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Start"
+
+[node name="Quitbutton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/Startbutton" to="." method="_on_startbutton_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quitbutton" to="." method="_on_quitbutton_pressed"]
