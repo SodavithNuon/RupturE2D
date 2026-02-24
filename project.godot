@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="RupturE2D"
-run/main_scene="uid://ftyv4vriy1ku"
+run/main_scene="uid://c06b821ufx24s"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -77,4 +77,4 @@ Interact={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://Dialogue/my_dialogue.dialogue", "res://Dialogue/ArnoldDialogue.dialogue", "res://Dialogue/ExitMart.dialogue", "res://Dialogue/JoshDialogue.dialogue")
+locale/translations_pot_files=PackedStringArray("res://Dialogue/my_dialogue.dialogue", "res://Dialogue/ArnoldDialogue.dialogue", "res://Dialogue/ExitMart.dialogue", "res://Dialogue/JoshDialogue.dialogue", "res://Dialogue/StorageExit.dialogue")

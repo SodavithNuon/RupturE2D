@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://c06b821ufx24s"]
+[gd_scene load_steps=4 format=3 uid="uid://c06b821ufx24s"]
 
 [ext_resource type="Script" uid="uid://bol0bqh52rr52" path="res://Scripts/menu.gd" id="1_lti8b"]
 [ext_resource type="Texture2D" uid="uid://bmvhjwwkcwtm3" path="res://Game Assets/UI/RupturEMenu.png" id="2_ouk20"]
+[ext_resource type="Texture2D" uid="uid://b3n7bde01v33u" path="res://Game Assets/UI/RupturELogo.png" id="3_mae5d"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -11,29 +12,25 @@ anchor_bottom = 1.0
 grow_vertical = 0
 script = ExtResource("1_lti8b")
 
-[node name="Title" type="TextureRect" parent="."]
-layout_mode = 0
-offset_left = 33.0
-offset_top = -561.0
-offset_right = 212.0
-offset_bottom = -496.0
-
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 0
+offset_left = -1.0
 offset_top = -649.0
-offset_right = 1925.0
-offset_bottom = 431.0
+offset_right = 1924.0
+offset_bottom = 435.99988
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_ouk20")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_top = -101.0
-offset_right = 70.0
-grow_vertical = 0
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 405.0
+offset_top = -354.0
+offset_right = 743.0
+offset_bottom = -228.0
+grow_vertical = 2
 
 [node name="Startbutton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
@@ -42,6 +39,15 @@ text = "Start"
 [node name="Quitbutton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "Quit"
+
+[node name="Title" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -20.99997
+offset_top = -652.0
+offset_right = 1515.0
+offset_bottom = 372.0
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_mae5d")
 
 [connection signal="pressed" from="VBoxContainer/Startbutton" to="." method="_on_startbutton_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quitbutton" to="." method="_on_quitbutton_pressed"]

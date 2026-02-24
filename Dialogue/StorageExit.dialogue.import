@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://b5vsstqiv0ent"
+path="res://.godot/imported/StorageExit.dialogue-45342bd475938d29b84e1055cc84eec6.tres"
+
+[deps]
+
+source_file="res://Dialogue/StorageExit.dialogue"
+dest_files=["res://.godot/imported/StorageExit.dialogue-45342bd475938d29b84e1055cc84eec6.tres"]
+
+[params]
+
+defaults=true

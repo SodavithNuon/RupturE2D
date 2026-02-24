@@ -1,4 +1,4 @@
-[gd_scene load_steps=95 format=3 uid="uid://w6lnhlafjn2m"]
+[gd_scene load_steps=97 format=3 uid="uid://w6lnhlafjn2m"]
 
 [ext_resource type="Script" uid="uid://c8p7xj48npwds" path="res://playermovement.gd" id="1_kbbts"]
 [ext_resource type="Texture2D" uid="uid://corlea1negwaa" path="res://Game Assets/Characters/The Male adventurer - Free/Idle/idle_down.png" id="2_p8f5f"]
@@ -11,6 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://r3lklo8j3vx7" path="res://Game Assets/Characters/The Male adventurer - Free/Walk/walk_left_up.png" id="9_f8mx4"]
 [ext_resource type="Texture2D" uid="uid://bajct6ulyy6oy" path="res://Game Assets/Characters/The Male adventurer - Free/Walk/walk_right_down.png" id="10_ai3r3"]
 [ext_resource type="Texture2D" uid="uid://bfa8ahwh7xod5" path="res://Game Assets/Characters/The Male adventurer - Free/Walk/walk_right_up.png" id="11_2dwjo"]
+[ext_resource type="Texture2D" uid="uid://dqvtivdvwxph4" path="res://Game Assets/UI/HeartEmpty.jpg" id="12_wmlme"]
+[ext_resource type="Texture2D" uid="uid://cg6jl53oldpd6" path="res://Game Assets/UI/HeartFull.jpg" id="13_hvkua"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qyaqk"]
 atlas = ExtResource("2_p8f5f")
@@ -708,3 +710,12 @@ shape = SubResource("CapsuleShape2D_o850h")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
 position = Vector2(18, 182)
 shape = SubResource("RectangleShape2D_kbbts")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer"]
+offset_right = 103.0
+offset_bottom = 49.0
+value = 100.0
+texture_under = ExtResource("12_wmlme")
+texture_progress = ExtResource("13_hvkua")

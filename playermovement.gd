@@ -1,13 +1,16 @@
 extends CharacterBody2D
+class_name Player
 
 # ====================
 # SPEED
 # ====================
 const SPEED := 160
 const SNEAK_MULTIPLIER := 0.5
+@export var maxHealth = 100
 
 @onready var anim: AnimatedSprite2D = $AnimatedSprite2D
 
+	
 var facing := "Forward"
 
 func _physics_process(delta: float) -> void:
@@ -74,3 +77,4 @@ func _physics_process(delta: float) -> void:
 	# Animation speed
 	anim.speed_scale = 0.7 if sneaking else 1.2
 	anim.play(anim_name)
+	
