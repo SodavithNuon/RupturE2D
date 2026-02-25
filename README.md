@@ -16,3 +16,6 @@ Video Link: https://www.youtube.com/watch?v=RoXCbw2IrCw
 
 ![Screenshot](images/Dialogue2.png)
 
+Beta Update: https://youtu.be/amUBx3RhYsY
+
+
