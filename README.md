@@ -1,7 +1,7 @@
 This project uses AI to help make it come to life. For now I have used ChatGPT and Claude to figure out the issue of conflicts and ask it's opinion on if what I'm trying to do or if my vision is possible within Godot.
 
 Prompts Include:
-+ ChatGPT: 
+ChatGPT: 
 "How to make the effect where when you walk behind a shelf you will see the vision of yourself behind the shelf and the shelf layers on top of you but is transparant"
 
 "In Godot, how do I make it where if I interact with an NPC, it shows dialogue box and portrait like this"
@@ -30,5 +30,10 @@ Video Link: https://www.youtube.com/watch?v=RoXCbw2IrCw
 
 Beta Update: https://youtu.be/amUBx3RhYsY
 
+![Screenshot](images/GameMenu.png)
 
+![Screenshot](images/DialoguePortrait1.png)
 
+![Screenshot](images/DialoguePortrait2.png)
+
+![Screenshot](images/StorageRoom.png)
