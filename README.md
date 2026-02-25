@@ -8,6 +8,10 @@ ChatGPT:
 
 "How to achieve this directional lighting on Godot?"
 
+"Generate a game Logo for my game RupturE with a zombie hand gripping on the text"
+
+"Generate a game background for my main menu using these NPCs inspired by the picture above"
+
 Prompts from Claude AI:
 
 "So in Godot dialogue manager, I have balloon.tscn and balloon.gd. This is the diialogue bubble used for most dialogue. How do I have different balloon/dialogue box for different dialogue since I have different Portrait for each dialogues"
