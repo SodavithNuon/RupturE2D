@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bj35myekoj6mp"]
+
+[ext_resource type="Script" uid="uid://buluboikbml68" path="res://Scripts/bullet.gd" id="1_v8qja"]
+[ext_resource type="Texture2D" uid="uid://drvb6mgyjaji1" path="res://Game Assets/UI/All_Fire_Bullet_Pixel_16x16.png" id="2_t4vbm"]
+
+[node name="Bullet" type="Node2D"]
+script = ExtResource("1_v8qja")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-2, 1)
+texture = ExtResource("2_t4vbm")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(-2, 7)
+rect = Rect2(-28, -33, 59, 53)
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

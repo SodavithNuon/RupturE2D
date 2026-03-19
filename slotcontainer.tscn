@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://irs4foglf1gu"]
+
+[node name="SlotContainer" type="PanelContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureHolder" type="Control" parent="."]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="TextureHolder"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="TextureHolder/TextureRect"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
