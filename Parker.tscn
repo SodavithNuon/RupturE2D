@@ -1,4 +1,4 @@
-[gd_scene load_steps=97 format=3 uid="uid://w6lnhlafjn2m"]
+[gd_scene load_steps=106 format=3 uid="uid://w6lnhlafjn2m"]
 
 [ext_resource type="Script" uid="uid://c8p7xj48npwds" path="res://playermovement.gd" id="1_kbbts"]
 [ext_resource type="Texture2D" uid="uid://corlea1negwaa" path="res://Game Assets/Characters/The Male adventurer - Free/Idle/idle_down.png" id="2_p8f5f"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://df448yhsa453b" path="res://Game Assets/Characters/The Male adventurer - Free/Idle/idle_left_down.png" id="4_wmlme"]
 [ext_resource type="Texture2D" uid="uid://c23lg40btw0hg" path="res://Game Assets/Characters/The Male adventurer - Free/Idle/idle_right_down.png" id="5_hvkua"]
 [ext_resource type="Texture2D" uid="uid://cn20v8se03s03" path="res://Game Assets/Characters/The Male adventurer - Free/Walk/walk_down.png" id="6_dybll"]
+[ext_resource type="Texture2D" uid="uid://cotqvwpbqaypy" path="res://Game Assets/Characters/The Male adventurer - Free/Death/death_normal.png" id="6_hvkua"]
 [ext_resource type="Texture2D" uid="uid://iqiatb4q71h6" path="res://Game Assets/Characters/The Male adventurer - Free/Walk/walk_up.png" id="7_dh35j"]
 [ext_resource type="Texture2D" uid="uid://g5wi0qp4afqe" path="res://Game Assets/Characters/The Male adventurer - Free/Walk/walk_left_down.png" id="8_4n8x1"]
 [ext_resource type="Texture2D" uid="uid://r3lklo8j3vx7" path="res://Game Assets/Characters/The Male adventurer - Free/Walk/walk_left_up.png" id="9_f8mx4"]
@@ -141,6 +142,38 @@ region = Rect2(288, 0, 48, 64)
 [sub_resource type="AtlasTexture" id="AtlasTexture_ntw8r"]
 atlas = ExtResource("5_hvkua")
 region = Rect2(336, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dybll"]
+atlas = ExtResource("6_hvkua")
+region = Rect2(0, 320, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dh35j"]
+atlas = ExtResource("6_hvkua")
+region = Rect2(48, 320, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4n8x1"]
+atlas = ExtResource("6_hvkua")
+region = Rect2(96, 320, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f8mx4"]
+atlas = ExtResource("6_hvkua")
+region = Rect2(144, 320, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ai3r3"]
+atlas = ExtResource("6_hvkua")
+region = Rect2(192, 320, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2dwjo"]
+atlas = ExtResource("6_hvkua")
+region = Rect2(240, 320, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tefho"]
+atlas = ExtResource("6_hvkua")
+region = Rect2(288, 320, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q8da1"]
+atlas = ExtResource("6_hvkua")
+region = Rect2(336, 320, 48, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wsy2u"]
 atlas = ExtResource("6_dybll")
@@ -454,6 +487,35 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_dybll")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dh35j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4n8x1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f8mx4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ai3r3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2dwjo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tefho")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q8da1")
+}],
+"loop": true,
+"name": &"Player_Death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_wsy2u")
 }, {
 "duration": 1.0,
@@ -695,27 +757,28 @@ size = Vector2(20, 28)
 script = ExtResource("1_kbbts")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(17, 151)
+position = Vector2(0, 1)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_6pjul")
-animation = &"Idle_Backward"
+animation = &"Player_Death"
 autoplay = "Idle_Backward"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(19, 151)
 shape = SubResource("CapsuleShape2D_o850h")
 
 [node name="DetectionArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
-position = Vector2(18, 182)
+position = Vector2(-1, 31)
 shape = SubResource("RectangleShape2D_kbbts")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer"]
-offset_right = 103.0
-offset_bottom = 49.0
+offset_left = -1.0
+offset_top = -2.0
+offset_right = 102.0
+offset_bottom = 47.0
 value = 100.0
 texture_under = ExtResource("12_wmlme")
 texture_progress = ExtResource("13_hvkua")

@@ -8996,6 +8996,7 @@ tile_set = SubResource("TileSet_rn6mf")
 
 [node name="Parker" parent="Y Sorting" instance=ExtResource("4_utc7a")]
 y_sort_enabled = true
+position = Vector2(65, 190)
 
 [node name="Camera2D" type="Camera2D" parent="Y Sorting/Parker"]
 zoom = Vector2(1.5, 1.5)

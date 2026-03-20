@@ -1,3 +1,6 @@
 ~ start
-Available in Full Release.
+Would you like to leave the storage?
+- yes
+	do go_to_escape_scene()
+- no => END
 => END
