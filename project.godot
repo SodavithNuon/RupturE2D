@@ -19,7 +19,6 @@ config/icon="res://icon.svg"
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 GameState="*res://Scripts/GameState.gd"
-SaveState="*res://Scripts/SaveState.gd"
 
 [dialogue_manager]
 

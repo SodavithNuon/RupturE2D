@@ -33,18 +33,13 @@ func _ready():
 	
 	spawn_position = global_position
 	health = maxHealth
-	
-	# Sync GameState with SaveState values (persistent across scenes)
-	GameState.elapsed_time = SaveState.elapsed_time
-	GameState.zombie_kills = SaveState.total_zombie_kills
 
 func _physics_process(delta: float) -> void:
 	if is_dead:
 		return
 	
-	# Update elapsed time in SaveState (persistent)
-	SaveState.elapsed_time += delta
-	GameState.elapsed_time = SaveState.elapsed_time
+	# Update elapsed time
+	GameState.elapsed_time += delta
 	
 	# Update time display
 	var seconds = int(GameState.elapsed_time)
@@ -165,7 +160,7 @@ func take_damage(amount: int) -> void:
 		die()
 
 func die() -> void:
-	"""Player death - play animation then restart level"""
+	"""Player death - return to Mart.tscn and reset"""
 	is_dead = true
 	is_invulnerable = true
 	health = 0
@@ -173,19 +168,18 @@ func die() -> void:
 	
 	# Play death animation
 	anim.play("Player_Death")
-	print("Player died! Restarting level...")
+	print("Player died! Returning to Mart...")
 	
 	# Wait for death animation to finish
 	await get_tree().create_timer(2.0).timeout
 	
-	# Reset SaveState when player dies
-	SaveState.reset_save_state()
+	# Reset everything
 	GameState.zombie_kills = 0
 	GameState.elapsed_time = 0.0
 	GameState.time_display = "00:00"
 	
-	# Restart the entire level
-	get_tree().reload_current_scene()
+	# Return to Mart.tscn
+	get_tree().change_scene_to_file("res://Mart.tscn")
 
 func update_health_bar():
 	"""Update the health bar display"""

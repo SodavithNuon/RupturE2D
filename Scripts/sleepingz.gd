@@ -15,15 +15,6 @@ var has_attacked_this_frame := false
 var groan_timer := 0.0
 var groan_interval := 3.0  # Groan every 3 seconds
 
-func _ready():
-	# CHECK IF THIS ZOMBIE IS ALREADY DEAD FROM SAVE STATE
-	if SaveState.is_zombie_dead(self.name, get_tree().current_scene.name):
-		print("Zombie ", self.name, " already dead. Removing.")
-		queue_free()
-		return
-	
-	print("Zombie ", self.name, " spawned in ", get_tree().current_scene.name)
-
 func _physics_process(delta):
 	if is_dead:
 		return
@@ -91,19 +82,15 @@ func take_damage(amount: int) -> void:
 	if health <= 0:
 		is_dead = true
 		
-		# SAVE STATE - Mark this zombie as dead so it stays dead when returning to scene
-		SaveState.mark_zombie_dead(self.name, get_tree().current_scene.name)
-		
-		# Update kill count from SaveState (persistent across scenes)
-		GameState.zombie_kills = SaveState.total_zombie_kills
-		GameState.kill_count_changed.emit(GameState.zombie_kills, GameState.kills_required)
-		if GameState.zombie_kills >= GameState.kills_required:
-			GameState.quest_complete.emit()
-		
 		# Play death sound
 		if death_audio and death_audio.stream:
 			death_audio.play()
 			print("✓ Zombie death sound playing!")
+		
+		GameState.zombie_kills += 1
+		GameState.kill_count_changed.emit(GameState.zombie_kills, GameState.kills_required)
+		if GameState.zombie_kills >= GameState.kills_required:
+			GameState.quest_complete.emit()
 		
 		sprite.play("SleepZ_Death")
 		
