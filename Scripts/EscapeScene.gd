@@ -4,6 +4,7 @@ class_name EscapeScene
 @onready var title_label: Label = $VBoxContainer/TitleLabel
 @onready var time_label: Label = $VBoxContainer/TimeLabel
 @onready var menu_button: Button = $MenuButton
+@onready var escaped_music: AudioStreamPlayer = $EscapedMusic
 
 func _ready():
 	print("EscapeScene _ready() called")
@@ -21,6 +22,16 @@ func _ready():
 		print("MenuButton connected successfully")
 	else:
 		print("ERROR: menu_button is null!")
+	
+	# Play escaped music
+	if escaped_music:
+		if escaped_music.stream:
+			escaped_music.play()
+			print("✓ Escaped music playing!")
+		else:
+			print("✗ ERROR: No escaped music stream assigned!")
+	else:
+		print("✗ ERROR: escaped_music is null!")
 	
 	get_tree().paused = true
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://ftyv4vriy1ku"]
+[gd_scene load_steps=17 format=4 uid="uid://ftyv4vriy1ku"]
 
 [ext_resource type="Texture2D" uid="uid://b71rdyvs33hs5" path="res://Game Assets/Map/Inside_C.png" id="1_8ba6v"]
 [ext_resource type="Texture2D" uid="uid://b55pq0xx6t3wv" path="res://Game Assets/Map/Modern tiles_Free/Interiors_free/32x32/Interiors_free_32x32.png" id="2_utc7a"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://w6lnhlafjn2m" path="res://Parker.tscn" id="4_utc7a"]
 [ext_resource type="PackedScene" uid="uid://brgkhrubwbgeq" path="res://arnold.tscn" id="5_rn6mf"]
 [ext_resource type="Script" uid="uid://ofx83mvoqki1" path="res://Scripts/martexit.gd" id="6_6icr4"]
+[ext_resource type="PackedScene" uid="uid://bq7cpuj3ayp35" path="res://PauseMenu.tscn" id="8_cxlln"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yd8c8"]
 texture = ExtResource("1_8ba6v")
@@ -9008,6 +9009,8 @@ limit_bottom = 465
 [node name="Josh" parent="Y Sorting" instance=ExtResource("4_05yu5")]
 position = Vector2(1019, 194.00002)
 scale = Vector2(1.25, 1.25)
+
+[node name="PauseScene" parent="Y Sorting" instance=ExtResource("8_cxlln")]
 
 [connection signal="body_entered" from="MartExit" to="MartExit" method="_on_body_entered"]
 [connection signal="body_exited" from="MartExit" to="MartExit" method="_on_body_exited"]

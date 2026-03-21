@@ -7,6 +7,9 @@ func _ready():
 	DialogueManager.dialogue_ended.connect(_on_dialogue_ended)
 	connect("body_entered", _on_body_entered)
 	connect("body_exited", _on_body_exited)
+	GameState.elapsed_time = 0.0
+	GameState.time_display = "00:00"
+	print("Timer reset for martstorage level")
 
 func _process(_delta) -> void:
 	if GameState.active_npc == self and Input.is_action_just_pressed("Interact") and not GameState.is_dialogue_active:

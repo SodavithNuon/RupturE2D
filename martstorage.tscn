@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=4 uid="uid://cf6tvivb47xbq"]
+[gd_scene load_steps=25 format=4 uid="uid://cf6tvivb47xbq"]
 
 [ext_resource type="Texture2D" uid="uid://b55pq0xx6t3wv" path="res://Game Assets/Map/Modern tiles_Free/Interiors_free/32x32/Interiors_free_32x32.png" id="1_xrugq"]
 [ext_resource type="Texture2D" uid="uid://bnvhf31aqstdg" path="res://Game Assets/Map/Modern tiles_Free/Interiors_free/32x32/Room_Builder_free_32x32.png" id="2_maun2"]
@@ -9,6 +9,9 @@
 [ext_resource type="Script" uid="uid://2c2tyjteukqo" path="res://Scripts/martback.gd" id="6_8lxov"]
 [ext_resource type="Script" uid="uid://bocsqvgol74n8" path="res://Scripts/storageexit.gd" id="7_acqhm"]
 [ext_resource type="PackedScene" uid="uid://bxsbs0t7ca2tr" path="res://hud.tscn" id="9_46ed4"]
+[ext_resource type="AudioStream" uid="uid://cak4nx1suea5j" path="res://Game Assets/Music/heart_beat_human_a_fast.mp3" id="10_5xhsi"]
+[ext_resource type="Script" uid="uid://dnnsp80vb17wi" path="res://Scripts/tension_music.gd" id="11_04ue1"]
+[ext_resource type="PackedScene" uid="uid://bq7cpuj3ayp35" path="res://PauseMenu.tscn" id="12_04ue1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8lxov"]
 texture = ExtResource("1_xrugq")
@@ -10153,6 +10156,14 @@ player = NodePath("../Parker")
 position = Vector2(855, -45)
 attack_range = 5
 player = NodePath("../Parker")
+
+[node name="TensionMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_5xhsi")
+volume_db = -9.455
+parameters/looping = true
+script = ExtResource("11_04ue1")
+
+[node name="PauseScene" parent="." instance=ExtResource("12_04ue1")]
 
 [connection signal="body_entered" from="Martreturn" to="Martreturn" method="_on_body_entered"]
 [connection signal="body_exited" from="Martreturn" to="Martreturn" method="_on_body_exited"]

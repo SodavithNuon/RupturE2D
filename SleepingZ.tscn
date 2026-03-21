@@ -1,7 +1,10 @@
-[gd_scene load_steps=37 format=3 uid="uid://b81cwptbwjdia"]
+[gd_scene load_steps=40 format=3 uid="uid://b81cwptbwjdia"]
 
 [ext_resource type="Script" uid="uid://b30iaogt3ehjs" path="res://Scripts/sleepingz.gd" id="1_5gji8"]
 [ext_resource type="Texture2D" uid="uid://c5iip5debmgjq" path="res://Game Assets/Enemies/Zombie.png" id="2_hm1m1"]
+[ext_resource type="AudioStream" uid="uid://r7tmkdinrwpp" path="res://Game Assets/Music/zombie_massacre_vocal_attack_short_01.wav" id="3_j4sdo"]
+[ext_resource type="AudioStream" uid="uid://yhs4i6b3kvbh" path="res://Game Assets/Music/zombie_massacre_head_smash_whoosh_01.wav" id="4_7r3n7"]
+[ext_resource type="AudioStream" uid="uid://du3jrjnk5f7v1" path="res://Game Assets/Music/zombie_massacre_vocal_attack_medium_05.wav" id="5_7r3n7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hhqic"]
 atlas = ExtResource("2_hm1m1")
@@ -282,3 +285,15 @@ debug_enabled = true
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.5
 autostart = true
+
+[node name="AttackAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_j4sdo")
+volume_db = -27.504
+
+[node name="DeathAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_7r3n7")
+volume_db = -20.628
+
+[node name="GroanAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_7r3n7")
+volume_db = -28.364

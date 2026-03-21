@@ -1,4 +1,4 @@
-[gd_scene load_steps=108 format=3 uid="uid://w6lnhlafjn2m"]
+[gd_scene load_steps=107 format=3 uid="uid://w6lnhlafjn2m"]
 
 [ext_resource type="Script" uid="uid://c8p7xj48npwds" path="res://playermovement.gd" id="1_kbbts"]
 [ext_resource type="Texture2D" uid="uid://corlea1negwaa" path="res://Game Assets/Characters/The Male adventurer - Free/Idle/idle_down.png" id="2_p8f5f"]
@@ -15,7 +15,6 @@
 [ext_resource type="Texture2D" uid="uid://dqvtivdvwxph4" path="res://Game Assets/UI/HeartEmpty.jpg" id="12_wmlme"]
 [ext_resource type="Texture2D" uid="uid://cg6jl53oldpd6" path="res://Game Assets/UI/HeartFull.jpg" id="13_hvkua"]
 [ext_resource type="AudioStream" uid="uid://cywksb7vfidim" path="res://Game Assets/Music/Steps_floor-014.ogg" id="15_dybll"]
-[ext_resource type="AudioStream" uid="uid://ckpbh86cmspxl" path="res://Game Assets/Music/08. Damage Grunt (Male).wav" id="16_dh35j"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qyaqk"]
 atlas = ExtResource("2_p8f5f")
@@ -787,8 +786,4 @@ texture_progress = ExtResource("13_hvkua")
 
 [node name="FootstepAudio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("15_dybll")
-volume_db = 2.0
-
-[node name="DamageAudio" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("16_dh35j")
-volume_db = -16.98
+volume_db = 4.0

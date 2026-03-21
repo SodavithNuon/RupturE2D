@@ -5,6 +5,7 @@ var zombie_kills := 0
 var kills_required := 5
 var elapsed_time := 0.0
 var time_display := "00:00"
+var timer_started := false  # Add this
 
 signal kill_count_changed(current: int, required: int)
 signal quest_complete()

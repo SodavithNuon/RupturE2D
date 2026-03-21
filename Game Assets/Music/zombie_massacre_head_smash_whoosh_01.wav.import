@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://yhs4i6b3kvbh"
+path="res://.godot/imported/zombie_massacre_head_smash_whoosh_01.wav-cef199df87f126302a488a9a3697cf60.sample"
+
+[deps]
+
+source_file="res://Game Assets/Music/zombie_massacre_head_smash_whoosh_01.wav"
+dest_files=["res://.godot/imported/zombie_massacre_head_smash_whoosh_01.wav-cef199df87f126302a488a9a3697cf60.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://gstopjrue1t6"
+path="res://.godot/imported/DavidKBD - The Last Pack - Piano - 02 - loopeable.ogg-2f12ee0fc80d7596a74344de67e9b0d4.oggvorbisstr"
+
+[deps]
+
+source_file="res://Game Assets/Music/DavidKBD - The Last Pack - Piano - 02 - loopeable.ogg"
+dest_files=["res://.godot/imported/DavidKBD - The Last Pack - Piano - 02 - loopeable.ogg-2f12ee0fc80d7596a74344de67e9b0d4.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

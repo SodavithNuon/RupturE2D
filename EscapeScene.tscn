@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://cc0obt13jd6g2"]
+[gd_scene load_steps=4 format=3 uid="uid://cc0obt13jd6g2"]
 
 [ext_resource type="Script" uid="uid://7pt55kqnw0h" path="res://Scripts/EscapeScene.gd" id="1_wkyl4"]
+[ext_resource type="AudioStream" uid="uid://gstopjrue1t6" path="res://Game Assets/Music/DavidKBD - The Last Pack - Piano - 02 - loopeable.ogg" id="2_tnbf6"]
 
 [sub_resource type="FontVariation" id="FontVariation_7lw5e"]
 
@@ -8,15 +9,15 @@
 script = ExtResource("1_wkyl4")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 1161.0
+offset_right = 1324.0
 offset_bottom = 645.0
 color = Color(0.056291588, 0.056291603, 0.056291595, 1)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-offset_left = 3.0
-offset_top = 111.0
-offset_right = 1159.0
-offset_bottom = 756.0
+offset_left = -29.0
+offset_top = 113.0
+offset_right = 1261.0
+offset_bottom = 758.0
 
 [node name="TitleLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2
@@ -33,11 +34,16 @@ theme_override_font_sizes/font_size = 30
 text = "00:00"
 
 [node name="MenuButton" type="Button" parent="."]
-offset_left = 475.0
-offset_top = 518.0
-offset_right = 710.0
-offset_bottom = 557.0
+offset_left = 501.0
+offset_top = 521.0
+offset_right = 736.0
+offset_bottom = 560.0
 theme_override_font_sizes/font_size = 22
 text = "Return to Main Menu"
+
+[node name="EscapedMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_tnbf6")
+volume_db = -15.471
+parameters/looping = true
 
 [connection signal="pressed" from="MenuButton" to="." method="_on_menu_button_pressed"]
